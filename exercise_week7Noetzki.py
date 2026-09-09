@@ -22,4 +22,23 @@ router_config = {
         {"name": "GigabitEthernet2", "ip": "10.0.0.1", "status": "up"},
         {"name": "GigabitEthernet3", "ip": "172.16.0.1", "status": "down"},
     ]
+
 }
+
+#==============================================================
+#Exercise 1: Convert Python Dict + JSON
+#==============================================================
+#HINT: converts a python dict to a JSON string
+
+print("=== EXERCISE 1: Convert to JSON ===")
+#FILL IN THE BLANKS
+#json_output = json._____(router_config, indent = 2)
+json_output = json.dumps(router_config, indent = 2)
+
+print(json_output)
+print()
+
+#==============================================================
+#Exercise 2: Convert Python Dict + YAML
+#==============================================================
+#HINT: converts a python dict to a JSON string
