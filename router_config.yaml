@@ -1,0 +1,12 @@
+hostname: Router-1
+interfaces:
+- ip: 192.168.1.1
+  name: GigabitEthernet1
+  status: up
+- ip: 10.0.0.1
+  name: GigabitEthernet2
+  status: up
+- ip: 172.16.0.1
+  name: GigabitEthernet3
+  status: down
+vendor: Cisco
