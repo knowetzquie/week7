@@ -41,4 +41,11 @@ print()
 #==============================================================
 #Exercise 2: Convert Python Dict + YAML
 #==============================================================
-#HINT: converts a python dict to a JSON string
+#HINT: converts a python dict to a YAML string
+print("=== EXERCISE 2: Convert to YAML ===")
+#FILL IN THE BLANK
+yaml_output = yaml.dump(router_config, default_flow_style= False)
+print(yaml_output)
+print()
+
+
