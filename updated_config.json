@@ -1,0 +1,26 @@
+{
+  "hostname": "Router-1",
+  "vendor": "Cisco",
+  "interfaces": [
+    {
+      "name": "GigabitEthernet1",
+      "ip": "192.168.1.1",
+      "status": "up"
+    },
+    {
+      "name": "GigabitEthernet2",
+      "ip": "10.0.0.1",
+      "status": "up"
+    },
+    {
+      "name": "GigabitEthernet3",
+      "ip": "172.16.0.1",
+      "status": "down"
+    },
+    {
+      "name": "loopback0",
+      "ip": "1.1.1.1",
+      "status": "up"
+    }
+  ]
+}

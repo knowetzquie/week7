@@ -66,7 +66,7 @@ print(f"Number of interfaces: {len(loaded_config['interfaces'])}")
 print()
 
 #=============================================================
-#Exercise 3: READ JSON from file
+#Exercise 4: READ YAML from to file
 #=============================================================
 print("=== EXERCISE 4: Save YAML to file ===")
 #FILL IN THE BLANK
@@ -75,3 +75,25 @@ with open("router_config.yaml", "w") as f:
 
 print("Saved to router_config.yaml!")
 print()
+
+#=============================================================
+#Exercise 5: CHALLENGE ===
+#=============================================================
+#Add a new interface (loopback0)
+print("=== EXERCISE 5: CHALLENGE ===")
+new_interface = {"name": "loopback0", "ip": "1.1.1.1", "status": "up"}
+#FILL IN THE BLANK
+router_config["interfaces"].append(new_interface)
+#Save updated config
+with open("updated_config.json", "w") as f:
+    json.dump(router_config, f, indent=2)
+print(f"Added Interface: {new_interface['name']}")
+print(f"Total Interface now: {len(router_config['interfaces'])}")
+print()
+
+print("=" * 50)
+print("Exercise Complete! Check your files: ")
+print("     - router_config.json")
+print("     - router_config.yaml")
+print("     - updated_config.json")
+print("=" *50)
